@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 20px;
+           display: flex;
+           justify-content:center;
+           margin:auto;
+         
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right:10px;
+        }
+       nav ul li a{
+        color:darkslategray;
+        text-decoration:none ;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: -3%;
+         }
+       nav ul li a:hover{
+        color:red ;
+         }
+      .images{
+        width: 35%;
+        height: 60%;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        }
+       .images img{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        transition: bottom 1s,left 1s;
+         }
+      
+      .container {
+            padding: 20px;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+      .container h2:hover{
+         color: red;
+      }
+      .container a{
+         background: gray;
+         padding: 10px 18px;
+         text-decoration:none;
+         font-weight: bold;
+         color:white;
+         display:inline-block;
+         margin: 30px 0;
+         border-radius: 5px;
+        list-style: none;
+      }
+      .container a:hover{
+         color:black;
+      }
+      .container h3{
+        font: bold;
+      }
+      .container h3:hover{
+         color:red
+      }
+      footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="images" >
+      <img src="https://usa.bootcampcdn.com/wp-content/uploads/sites/108/2021/03/CDG_blog_post_image_01-850x412.jpg">
+     </div> 
+
+    <div class="container">
+        <h2 id="about">About</h2>
+        <p>This is my personal portfolio website. Here, you can learn more about me, <br>
+         check out my skills, projects, resume, and get in touch with me.</p>
+
+        <h2 id="skills">Skills</h2>
+        <p>HTML, CSS, JavaScript</p>
+        <img src="https://t3.ftcdn.net/jpg/03/21/24/30/360_F_321243084_GstfWflk1eTLlzUdRZ5mjoP5IG1iCc8J.jpg">
+        <h2 id="projects">Projects</h2>
+        <p>Check out my projects on my GitHub account.</p>
+        <h2 id="resume">Resume</h2>
+        <p>Download my resume in PDF format.</p>
+        <a href="#">DOWNLOAD CV</a>
+        <h2 id="contact">Contact</h2>
+        Get in touch with me by emailing me at
+        <h3>lakshmijillepally2003@gmail.com</h3>
+    </div>
+
+    <footer>
+        <p>&copy; 2022 My Personal Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
